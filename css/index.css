@@ -176,7 +176,7 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 150%;
-  color: black;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -196,6 +196,16 @@ nav a {
   flex-direction: row;
   padding: 30px 0;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home header .top-bar {
+    flex-direction: column;
+    flex-basis: 98%;
+    justify-content: space-between;
+  }
+  .home header .top-bar nav {
+    width: 98%;
+  }
 }
 .home header .top-content {
   padding: 15px 0;
@@ -247,10 +257,10 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .btn {
-  width: 90%;
-  background-color: lightseagreen;
-  color: white;
+.home .content-pick .btn {
+  width: 85%;
+  background-color: #17A2B8;
+  color: #FFFFFF;
   font-size: 200%;
   border: solid;
   border-radius: 15px;

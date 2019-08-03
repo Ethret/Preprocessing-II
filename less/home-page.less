@@ -9,12 +9,23 @@
       flex-direction: row;
       padding: 30px 0;
       border-bottom: 2px dashed @navigation-border;
+
+      @media @mobile {
+        flex-direction: column;
+        flex-basis: 98%;
+        justify-content: space-between;
+
+        nav {
+          width: 98%;
+        }
+      }
     }
 
     .top-content {
       padding: 15px 0;
       border-bottom: 2px dashed @navigation-border;
     }
+
   }
 
   .content-section {
@@ -74,15 +85,9 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    .btn {
+      .btn(85%);
+    }
   }
 
-  .btn {
-    .btn-width(90%);
-    background-color: lightseagreen;
-    color: white;
-    font-size: 200%;
-    border: solid;
-    border-radius: 15px;
-    padding: 13px 0px;
-  }
 }// home
